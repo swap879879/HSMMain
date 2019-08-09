@@ -5,17 +5,20 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { APP_BASE_HREF } from '@angular/common';
 import { MainComponent } from './Main.Component'
 import { MainRoutingModule } from './Main.Routing';
-import { AppModule} from './Demo/app.module'
+import { AppComponent } from './Demo/app.component';
+
+
+
  
 @NgModule({
     declarations: [
-        MainComponent 
+        MainComponent, AppComponent
     ],
     imports: [
         BrowserModule, MainRoutingModule ,
-        BrowserAnimationsModule, NoopAnimationsModule, AppModule    ],
+        BrowserAnimationsModule, NoopAnimationsModule    ],
     exports: [
-        MainComponent
+        
     ],
     
     bootstrap: [MainComponent]

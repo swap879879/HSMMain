@@ -3,17 +3,7 @@ import { MatInput, MatFormField } from '@angular/material'
 
 @Component({
     selector: 'app-root',
-    template: `<form class="example-form">
-<div>
-  <mat-form-field class="example-full-width">
-    <input matInput placeholder="Favorite food" value="Sushi">
-  </mat-form-field>
-
-  <mat-form-field class="example-full-width">
-    <textarea matInput placeholder="Leave a comment"></textarea>
-  </mat-form-field>
-</div>
-</form>
+    template: `Tesr
 
 `,
     styles:[`.example-form {

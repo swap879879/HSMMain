@@ -222,6 +222,7 @@
   <ItemGroup>
     <Content Include="app\Demo\app.component.css" />
     <Content Include="app\Demo\app.component.html" />
+    <Content Include="app\HtmlPage.html" />
     <Content Include="app\index.html" />
     <Content Include="app\styles.css" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -230,6 +231,8 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\materialize.css" />
+    <Content Include="Content\materialize.min.css" />
     <Content Include="Content\Theme\component.css" />
     <Content Include="Content\Theme\demo.css" />
     <Content Include="Content\Theme\normalize.css" />
@@ -284,6 +287,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\materialize.js" />
+    <Content Include="Scripts\materialize.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
