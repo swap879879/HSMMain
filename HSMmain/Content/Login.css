@@ -1,0 +1,146 @@
+﻿body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 50%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+	.login-form .form-group {
+		margin-bottom: 20px;
+	}
+	.login-form label {
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.login-form .form-control {
+		min-height: 38px;
+		padding-left: 5px;
+		box-shadow: none !important;
+		border-width: 0 0 1px 0;
+		border-radius: 0;
+	}
+	.login-form .form-control:focus {
+		border-color: #ccc;
+	}
+	.login-form .input-group-addon {
+		max-width: 42px;
+		text-align: center;
+		background: none;
+		border-width: 0 0 1px 0;
+		padding-left: 5px;
+		border-radius: 0;
+	}
+    .login-form .btn {        
+        font-size: 16px;
+        font-weight: bold;
+		background: #19aa8d;
+        border-radius: 3px;
+		border: none;
+		min-width: 140px;
+        outline: none !important;
+    }
+	.login-form .btn:hover, .login-form .btn:focus {
+		background: #179b81;
+	}
+	.login-form .hint-text {
+		text-align: center;
+		padding-top: 5px;
+		font-size: 13px;
+	}
+	.login-form .modal-footer {
+		color: #999;
+		border-color: #dee4e7;
+		text-align: center;
+		margin: 0 -25px -25px;
+		font-size: 13px;
+		justify-content: center;
+	}
+	.login-form a {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.login-form a:hover {
+		text-decoration: none;
+	}
+	.login-form a {
+		color: #19aa8d;
+		text-decoration: none;
+	}	
+	.login-form a:hover {
+		text-decoration: underline;
+	}
+	.login-form .fa {
+		font-size: 21px;
+	}
+	.trigger-btn {
+		display: inline-block;
+		margin: 100px auto;
+	}

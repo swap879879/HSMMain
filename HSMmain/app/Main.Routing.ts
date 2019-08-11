@@ -2,6 +2,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './Demo/app.component';
 
+
 const routes: Routes = [
     {
         path: 'product',
@@ -12,8 +13,8 @@ const routes: Routes = [
    
     {
         path: '',
-        redirectTo: '',
-        pathMatch: 'full',
+        pathMatch:'full',
+        redirectTo:'*'
     }
 ];
 

@@ -7,8 +7,6 @@ import { MainComponent } from './Main.Component'
 import { MainRoutingModule } from './Main.Routing';
 import { AppComponent } from './Demo/app.component';
 
-
-
  
 @NgModule({
     declarations: [

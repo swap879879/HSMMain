@@ -214,6 +214,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CommonModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -225,14 +226,9 @@
     <Content Include="app\HtmlPage.html" />
     <Content Include="app\index.html" />
     <Content Include="app\styles.css" />
-    <Content Include="Content\bootstrap-grid.css" />
-    <Content Include="Content\bootstrap-grid.min.css" />
-    <Content Include="Content\bootstrap-reboot.css" />
-    <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\materialize.css" />
-    <Content Include="Content\materialize.min.css" />
+    <Content Include="Content\Login.css" />
     <Content Include="Content\Theme\component.css" />
     <Content Include="Content\Theme\demo.css" />
     <Content Include="Content\Theme\normalize.css" />
@@ -244,6 +240,9 @@
     <Content Include="fonts\ecoicons\license.txt" />
     <Content Include="fonts\ecoicons\Read Me.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\HomePage\flexslider-icon.svg" />
+    <Content Include="fonts\HomePage\fontawesome-webfont.svg" />
+    <Content Include="fonts\HomePage\slick.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\Logo.jpeg" />
@@ -272,23 +271,35 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.min.js.map" />
-    <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="Content\bootstrap-grid.min.css.map" />
-    <Content Include="Content\bootstrap-reboot.css.map" />
-    <Content Include="Content\bootstrap-reboot.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Images\Logo" />
+    <Content Include="fonts\HomePage\Flaticon.woff" />
+    <Content Include="fonts\HomePage\flexslider-icon.eot" />
+    <Content Include="fonts\HomePage\flexslider-icon.ttf" />
+    <Content Include="fonts\HomePage\flexslider-icon.woff" />
+    <Content Include="fonts\HomePage\fontawesome-webfont.eot" />
+    <Content Include="fonts\HomePage\fontawesome-webfont.ttf" />
+    <Content Include="fonts\HomePage\fontawesome-webfont.woff" />
+    <Content Include="fonts\HomePage\fontawesome-webfont.woff2" />
+    <Content Include="fonts\HomePage\FontAwesome.otf" />
+    <Content Include="fonts\HomePage\slick.eot" />
+    <Content Include="fonts\HomePage\slick.ttf" />
+    <Content Include="fonts\HomePage\slick.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery.min.map" />
+    <Content Include="Scripts\jquery.slim.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.slim.js" />
+    <Content Include="Scripts\jquery.slim.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\materialize.js" />
-    <Content Include="Scripts\materialize.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -332,6 +343,7 @@
     <Content Include="tsconfig.app.json" />
     <Content Include="tsconfig.json" />
     <Content Include="tslint.json" />
+    <Content Include="Views\Home\HomePageContainer.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
