@@ -33,13 +33,20 @@
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                <input type="text" class="form-control" name="username" value="Username"  placeholder="Username">
+                                @*<input type="text" class="form-control" name="username" value="@Model.Username=>"  placeholder="Username">*@
+                            
+
+                                @Html.TextBoxFor(m => m.Username, new { @class = "form-control",placeholder = "Username" })
+
+                                
+                                
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                <input type="text" class="form-control" name="username" value="Password" placeholder="Password">
+                                @*<input type="text" class="form-control" name="username" value="@Model.Password" placeholder="Password">*@
+                                @Html.TextBoxFor(m => m.Password, new { @class = "form-control" , placeholder = "Password" } )
                             </div>
                         </div>
                         <button type="submit" class="btn btn-black" value="Login">Login</button>

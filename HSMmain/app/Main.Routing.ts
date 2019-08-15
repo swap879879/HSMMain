@@ -6,9 +6,9 @@ import { AppComponent } from './Demo/app.component';
 const routes: Routes = [
     {
         path: 'product',
-     //   loadChildren: "./Demo/app.module#AppModule"
-        //loadChildren:() => import('./Demo/app.module').then(mod => mod.AppModule)
-       component: AppComponent
+      //  component: AppComponent
+        //loadChildren: "./Masters/Component/CoutryStateCity#CountryStateCityMasModule"
+        loadChildren: () => import('./Masters/Component/CoutryStateCity').then(mod => mod.CountryStateCityMasModule)
     },
    
     {

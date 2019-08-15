@@ -225,6 +225,7 @@
     <Content Include="app\Demo\app.component.html" />
     <Content Include="app\HtmlPage.html" />
     <Content Include="app\index.html" />
+    <Content Include="app\Masters\Views\CountryStateCityMas.html" />
     <Content Include="app\styles.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -362,12 +363,14 @@
     <TypeScriptCompile Include="app\Demo\app-routing.module.ts" />
     <TypeScriptCompile Include="app\Demo\app.component.ts" />
     <TypeScriptCompile Include="app\Demo\app.module.ts" />
+    <TypeScriptCompile Include="app\Demo\app.service.ts" />
     <TypeScriptCompile Include="app\environments\environment.prod.ts" />
     <TypeScriptCompile Include="app\environments\environment.ts" />
     <TypeScriptCompile Include="app\Main.Component.ts" />
     <TypeScriptCompile Include="app\Main.Module.ts" />
     <TypeScriptCompile Include="app\Main.Routing.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\Masters\Component\CoutryStateCity.ts" />
     <TypeScriptCompile Include="app\polyfills.ts" />
   </ItemGroup>
   <ItemGroup>

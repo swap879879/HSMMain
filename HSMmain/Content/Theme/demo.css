@@ -11,12 +11,25 @@
 }
 
 body {
-	background: rgba(255, 255, 255, 0.6);
+    background: #5f6f81;
+    background-image: url('../../Images/HomePage.jpg');
+}
+
+.customClass{
+    margin-top: 10%;
+    margin-left: 10%;   
+    border: 1px solid black;
+    padding-top: 1%;
+    background: royalblue;
+}
+
+.customPageClass{
+    background:white;
 }
 
 .container > header,
 .codrops-top {
-	color: #fff !important;
+    color: #fff;
 	font-family: 'Lato', Arial, sans-serif !important;
 }
 

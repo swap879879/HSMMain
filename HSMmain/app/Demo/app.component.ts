@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { MatInput, MatFormField } from '@angular/material'
+import { Component, OnInit } from '@angular/core';
+import { MatInput, MatFormField } from '@angular/material';
+import { AppService } from './app.service';
 
 @Component({
     selector: 'app-root',
@@ -18,6 +19,18 @@ import { MatInput, MatFormField } from '@angular/material'
 
   
 })
-export class AppComponent {
-  title = 'DemoApp';
+export class AppComponent implements OnInit {
+    title = 'DemoApp';
+
+    constructor(private _AppService: AppService) { }
+
+    ngOnInit() {
+        this.getdata();
+    }
+
+    getdata() {
+        this._AppService.getConfig().subscribe(x => {
+            alert(x);
+        })
+    }
 }

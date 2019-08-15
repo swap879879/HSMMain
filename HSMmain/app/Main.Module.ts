@@ -5,19 +5,30 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { APP_BASE_HREF } from '@angular/common';
 import { MainComponent } from './Main.Component'
 import { MainRoutingModule } from './Main.Routing';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './Demo/app.component';
+import { AppService } from './Demo/app.service';
 
+import { MatFormFieldModule, MatCardModule } from "@angular/material";
  
 @NgModule({
     declarations: [
         MainComponent, AppComponent
     ],
     imports: [
-        BrowserModule, MainRoutingModule ,
-        BrowserAnimationsModule, NoopAnimationsModule    ],
-    exports: [
-        
+        BrowserModule,
+        MainRoutingModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        NoopAnimationsModule,
+        MatFormFieldModule,
+        MatCardModule
     ],
+    exports: [
+        MatFormFieldModule,
+        MatCardModule
+    ],
+    providers: [AppService],
     
     bootstrap: [MainComponent]
 })

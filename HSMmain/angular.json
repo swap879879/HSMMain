@@ -14,6 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "./Scripts/app",
+            "deployUrl": "./Scripts/app/",
             "index": "app/index.html",
             "main": "app/main.ts",
             "polyfills": "app/polyfills.ts",
@@ -65,6 +66,7 @@
             "browserTarget": "app:build"
           },
           "configurations": {
+            "Architect": null,
             "production": {
               "browserTarget": "app:build:production"
             }
