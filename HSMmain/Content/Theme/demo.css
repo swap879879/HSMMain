@@ -12,7 +12,7 @@
 
 body {
     background: #5f6f81;
-    background-image: url('../../Images/HomePage.jpg');
+    /*background-image: url('../../Images/HomePage.jpg');*/
 }
 
 .customClass{
@@ -20,13 +20,40 @@ body {
     margin-left: 10%;   
     border: 1px solid black;
     padding-top: 1%;
-    background: royalblue;
+    background: #000000;
 }
 
 .customPageClass{
-    background:white;
+    background: white;
+    padding: 2%;
 }
 
+.PageHeader{
+    text-align:center;
+    text-decoration:underline;
+}
+
+.PageBodyClass{
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ 
+    border-top-color: rgba(0, 123, 255, 0.5);
+    border-top-style: groove;
+    border-top-width: thick;
+
+    border-left-color: #0000006b;
+    border-left-style: double;
+    border-left-width: 1px;   
+
+    border-right-color: #0000006b;    
+    border-right-style: double;
+    border-right-width: 1px;                  
+    
+    border-bottom-color: #0000006b;    
+    border-bottom-style: double;
+    border-bottom-width: 1px;
+}
 .container > header,
 .codrops-top {
     color: #fff;
@@ -140,7 +167,7 @@ body {
 	color: #89867e;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1200px) {
 	.container > header {
 		margin: 0 auto !important;
 		padding: 120px 50px !important;

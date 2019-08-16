@@ -9,7 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './Demo/app.component';
 import { AppService } from './Demo/app.service';
 
-import { MatFormFieldModule, MatCardModule } from "@angular/material";
+import { MatFormFieldModule, MatCardModule, MatSidenavModule } from "@angular/material";
  
 @NgModule({
     declarations: [
@@ -22,11 +22,13 @@ import { MatFormFieldModule, MatCardModule } from "@angular/material";
         BrowserAnimationsModule,
         NoopAnimationsModule,
         MatFormFieldModule,
-        MatCardModule
+        MatCardModule,
+        MatSidenavModule
     ],
     exports: [
         MatFormFieldModule,
-        MatCardModule
+        MatCardModule,
+        MatSidenavModule
     ],
     providers: [AppService],
     

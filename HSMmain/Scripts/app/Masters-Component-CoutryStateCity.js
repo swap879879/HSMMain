@@ -80,7 +80,7 @@ CountryStateCityMasModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"customPageClass\">\r\n    <h3>Contry Master</h3>\r\n    <div>\r\n        <mat-card>\r\n            <mat-card-content>\r\n                This is country Maste\r\n            </mat-card-content>\r\n            <mat-card-actions>\r\n                <button mat-button>LIKE</button>\r\n                <button mat-button>SHARE</button>\r\n\r\n            </mat-card-actions>\r\n            <mat-card-footer>\r\n                This is footer\r\n            </mat-card-footer>\r\n        </mat-card>\r\n    </div>\r\n\r\n    <div class=\"card\">\r\n        <div class=\"card-header\"></div>\r\n        <div class=\"card-body\">\r\n            Test\r\n        </div>\r\n        <div class=\"card-footer\"></div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"customClass rounded\">\r\n    <div class=\"customPageClass\">\r\n        <div class=\"PageHeader\">\r\n            <h3>Contry Master</h3>\r\n        </div>\r\n        <div class=\"PageBodyClass\">\r\n            <mat-card>\r\n                <mat-card-content>\r\n                    This is country Maste\r\n                </mat-card-content>\r\n                <mat-card-actions>\r\n                    <button mat-button>LIKE</button>\r\n                    <button mat-button>SHARE</button>\r\n\r\n                </mat-card-actions>\r\n                <mat-card-footer>\r\n                    This is footer\r\n                </mat-card-footer>\r\n            </mat-card>\r\n        </div>\r\n\r\n        \r\n    </div>\r\n</div>"
 
 /***/ })
 
