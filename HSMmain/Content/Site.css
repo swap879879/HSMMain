@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.mat-tab-label-active{
+  background-color: red ;
+  opacity: 1 !important;
+}

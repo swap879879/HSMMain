@@ -1,10 +1,10 @@
-﻿<mat-drawer-container class="example-container" autosize>
+﻿
     <div>
         <ul id="gn-menu" class="gn-menu-main">
             <li class="gn-trigger">
-                <a class="gn-icon gn-icon-menu" (click)="drawer.toggle()"><span>Menu</span></a>
+                <a class="gn-icon gn-icon-menu"><span>Menu</span></a>
 
-                <mat-drawer #drawer class="example-sidenav" mode="side">
+              
 
                     <nav class="gn-menu-wrapper">
                         <div class="gn-scroller">
@@ -33,8 +33,7 @@
                             </ul>
                         </div><!-- /gn-scroller -->
                     </nav>
-                </mat-drawer>
-
+              
 
             </li>
             <li><a href="http://tympanus.net/codrops">HSM</a></li>
@@ -49,4 +48,4 @@
     <script>
         new gnMenu(document.getElementById('gn-menu'));
     </script>
-</mat-drawer-container>
+

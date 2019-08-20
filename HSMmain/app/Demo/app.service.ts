@@ -9,6 +9,6 @@ export class AppService {
     constructor(private http: HttpClient) { }
 
     getConfig(): Observable<string>{
-        return this.http.get<string>("http://localhost:8081/Home/Index");
+        return this.http.get<string>("http://localhost:8081/CountryStateCity/index");
     }
 }

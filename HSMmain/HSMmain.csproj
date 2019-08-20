@@ -229,6 +229,8 @@
     <Content Include="app\styles.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\deeppurple-amber.css" />
+    <Content Include="Content\indigo-pink.css" />
     <Content Include="Content\Login.css" />
     <Content Include="Content\Theme\component.css" />
     <Content Include="Content\Theme\demo.css" />
@@ -372,6 +374,7 @@
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\Masters\Component\CoutryStateCity.ts" />
     <TypeScriptCompile Include="app\polyfills.ts" />
+    <TypeScriptCompile Include="app\ShareModule.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

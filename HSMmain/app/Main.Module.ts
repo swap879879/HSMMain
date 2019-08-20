@@ -8,27 +8,23 @@ import { MainRoutingModule } from './Main.Routing';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './Demo/app.component';
 import { AppService } from './Demo/app.service';
+import { ShareModule } from "./ShareModule";
 
-import { MatFormFieldModule, MatCardModule, MatSidenavModule } from "@angular/material";
  
 @NgModule({
     declarations: [
         MainComponent, AppComponent
     ],
     imports: [
+        ShareModule,
         BrowserModule,
         MainRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
         NoopAnimationsModule,
-        MatFormFieldModule,
-        MatCardModule,
-        MatSidenavModule
     ],
     exports: [
-        MatFormFieldModule,
-        MatCardModule,
-        MatSidenavModule
+        
     ],
     providers: [AppService],
     
