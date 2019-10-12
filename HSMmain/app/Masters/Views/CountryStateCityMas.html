@@ -6,40 +6,134 @@
         <div class="PageBodyClass">
           <mat-tab-group class="mat-background-primary">
               <mat-tab label="Country Master"> 
-                  <div class="row">
-                      <div class="col-md-9">
-
-                      </div>
-                      <div class="col-md-3">
-                          <button mat-raised-button color="primary">
+                  <div class="btnAddBack">                     
+                          <button mat-raised-button color="primary" (click)="AddNewCountry(CV.ShowMatTable ? 'Add' : 'Back')">
                               <ng-template  [ngIf]="CV.ShowMatTable" [ngIfElse]="ShowBackButton">
                                  Add New Country
                               </ng-template>
                               <ng-template #ShowBackButton>
-                                  <div>Loading...</div>
+                                 Back
                               </ng-template>
-                          </button>
-                      </div>
+                          </button>                      
                   </div>                                   
-                 <div *ngIf="CV.ShowMatTable">
-                     <div *ngIf="dtCountryMaster.data.length > 0">
-                         <mat-table #table [dataSource]="dtCountryMaster">
-                             <ng-container matColumnDef="CountryCode">
-                                 <mat-header-cell *matHeaderCellDef>Country Code</mat-header-cell>
-                                 <mat-cell *matCellDef="let element">{{element.CountryCode}}</mat-cell>
-                             </ng-container>
-                             <ng-container matColumnDef="Country">
-                                 <mat-header-cell *matHeaderCellDef>Country</mat-header-cell>
-                                 <mat-cell *matCellDef="let element">{{element.Country}}</mat-cell>
-                             </ng-container>
-                             <mat-header-row *matHeaderRowDef="displayColumns"></mat-header-row>
-                             <mat-row *matRowDef="let row; columns:displayColumns;"></mat-row>
-                         </mat-table>
+                  <div *ngIf="CV.ShowMatTable">
+                      <div *ngIf="dtCountryMaster.data.length == 0 && CV.ShowSpinner">
+                          <mat-card>
+                              <mat-card-content>
+                                  <div class="text-center">
+                                      <div class="spinner-grow text-primary" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-secondary" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-success" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-danger" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-warning" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-info" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-light" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                      <div class="spinner-grow text-dark" role="status">
+                                          <span class="sr-only">Loading...</span>
+                                      </div>
+                                  </div>
+                              </mat-card-content>
+                          </mat-card>
+
+                      </div>
+
+                      <div *ngIf="dtCountryMaster.data.length > 0">
+                          <mat-table #table [dataSource]="dtCountryMaster">
+                              <ng-container matColumnDef="CountryCode">
+                                  <mat-header-cell *matHeaderCellDef>Country Code</mat-header-cell>
+                                  <mat-cell *matCellDef="let element">{{element.CountryCode}}</mat-cell>
+                              </ng-container>
+                              <ng-container matColumnDef="Country">
+                                  <mat-header-cell *matHeaderCellDef>Country</mat-header-cell>
+                                  <mat-cell *matCellDef="let element">{{element.Country}}</mat-cell>
+                              </ng-container>
+                              <ng-container matColumnDef="Action">
+                                  <mat-header-cell *matHeaderCellDef></mat-header-cell>
+                                  <mat-cell *matCellDef="let element">
+                                      <div style="margin-right:15px">
+                                          <button mat-icon-button (click)="ViewCountry(element)"   matTooltip="View Country">
+                                              <i class='fas fa-eye' style='font-size:x-large;color:greenyellow;cursor:pointer;'></i>
+                                          </button>
+                                      </div>
+                                      <div style="margin-right:15px">
+                                          <button mat-icon-button (click)="EditCountry(element)"   matTooltip="Edit Country">
+                                              <i class='fas fa-edit' style='font-size:x-large;color:cornflowerblue;cursor:pointer;'></i>
+                                          </button>
+                                      </div>
+                                      <div style="margin-right:15px">
+                                          <button mat-icon-button (click)="DeleteCountry(element)"   matTooltip="Delete Country">
+                                              <i class='fas fa-trash-alt' style='font-size:x-large;color:red;cursor:pointer;'></i>
+                                          </button>
+                                      </div>
+                                  </mat-cell>
+                              </ng-container>
+
+                              <mat-header-row *matHeaderRowDef="displayColumns"></mat-header-row>
+                              <mat-row *matRowDef="let row; columns:displayColumns;"></mat-row>
+                          </mat-table>
                      </div>
+
+                      <div *ngIf="dtCountryMaster.data.length == 0 && CV.ShowNoRecordFound">
+                          <mat-card>
+                              <mat-card-content>                                  
+                                 <div class="text-center">
+                                     <h1>No Records Found</h1>
+                                 </div>
+                              </mat-card-content>
+                          </mat-card>
+                      </div>
                  </div>
+                  <div *ngIf="!CV.ShowMatTable">
+                      <div class="card">
+                          <div class="card-header ">
+                              Add New Country
+                          </div>
+                          <div class="card-body">
+                              <div>
+                                  <form class="AddCountryForm" #AddCountryForm="ngForm" >
+                                      <div class="container">
+                                          <mat-form-field>
+                                              <input [disabled]="CV.IsDisable" matInput placeholder="Country" required id="Country" name="Country" [(ngModel)]="CountryPt.Country">
+                                              <mat-error>
+                                                  Please Enter Country
+                                              </mat-error>
+                                          </mat-form-field>
+                                      </div>
+                                      <div class="container">
+                                          <mat-form-field>
+                                              <input  [disabled]="CV.IsDisable" matInput placeholder="CountryCode" required id="CountryCode" name="CountryCode" [(ngModel)]="CountryPt.CountryCode">
+                                              <mat-error>
+                                                  Please Enter Country Code
+                                              </mat-error>
+                                          </mat-form-field>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                          <div class="card-footer">
+                              <button mat-raised-button color="primary"  [disabled]="CV.IsDisableSave || AddCountryForm.form.invalid" (click)="SaveCountry()">
+                                  Save
+                              </button>
+                          </div>
+                      </div>
+                  </div>
               </mat-tab>
               <mat-tab label="State Master">
-                  <div>Country Master</div> 
+                  <div><i class='fas fa-edit' style='font-size:48px;color:cornflowerblue;cursor:pointer'></i></div> 
               </mat-tab>
               <mat-tab label="City Master">
                   <div>Country Master</div> 

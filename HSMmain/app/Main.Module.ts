@@ -21,7 +21,7 @@ import { ShareModule } from "./ShareModule";
         MainRoutingModule,
         HttpClientModule,
         BrowserAnimationsModule,
-        NoopAnimationsModule,
+        NoopAnimationsModule        
     ],
     exports: [
         

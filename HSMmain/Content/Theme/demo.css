@@ -11,17 +11,17 @@
 }
 
 body {
-    background: #5f6f81;
+    /*background: #5f6f81;*/
     /*background-image: url('../../Images/HomePage.jpg');*/
 }
 
-.customClass{
+/*.customClass{
     margin-top: 10%;
     margin-left: 10%;   
     border: 1px solid black;
     padding-top: 1%;
     background: #000000;
-}
+}*/
 
 .customPageClass{
     background: white;
